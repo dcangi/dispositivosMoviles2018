@@ -15,9 +15,29 @@
         android:layout_height="wrap_content"
         android:inputType="text" />
 
-    <Button android:id="@+id/btnAceptar"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/aceptar" />
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/aceptar" />
+
+        <Button android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/btnMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mostrar"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </LinearLayout>
